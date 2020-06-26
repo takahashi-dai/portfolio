@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+html{
+	height:100%;
+}
+
+body{
+	margin:0px;
+	height:100%;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	background-color:black;
+	
+	display:flex;
+	flex-direction:row;
+	
+}
+
+.left_sub{
+	width:20%;
+	height:100%;
+	background-color:black;
+}
+
+.right_sub{
+	width:80%;
+	height:100%;
+	background-color: deepskyblue;
+	display: flex;
+	overflow: hidden;
+}
+
+.right_main{
+	background-color: white;
+	width:88.5%;
+	height:59%;
+	margin: 4.7% 5.8%;
+}
+
+.menu_container{
+	width:100%;
+	height:100%;
+}
+
+
+
+
+.menu_container >div:nth-child(-n+3){
+	width:100%;
+	height:10%;
+	transition:opacity 1s 0s,1s 0s;
+}
+
+.menu_container >div:nth-child(n+4){
+	width:60%;
+	height:10%;
+	transition:opacity 1s 0s,1s 0s;
+	margin:0 0 0 auto;
+}
+
+.menu_container>div:hover{
+	color:white;
+	opacity: 50%;
+}
+
+
+/*:::::::::::::::menu_parameter::::::::::::::::::*/
+.menu{
+	background-color:gray;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu2{
+	background-color:orange;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu2 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu3{
+	background-color: deepskyblue;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu3 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu4{
+	background-color: goldenrod;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu4 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu5{
+	background-color: limegreen;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu5 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu6{
+	background-color: orangered;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu6 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu7{
+	background-color:white;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu7 a{
+	height:100%;
+	width:100%;
+	color:black;
+	text-align:center;
+}
+
+.menu8{
+	background-color: orange;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu8 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+
+
+/*::::::::::::::menu_parameter_end::::::::::::::::::*/
+
+/*::::::::::::::::page_src::::::::::::::::::::::::::*/
+
+@keyframes fadeIn {
+    0% {
+		opacity:0;
+    }
+    100% {
+		opacity:1;
+    }
+}
+
+.right_sub > .img_box >img{
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+	margin: 10px;
+	width: 100%;
+	height: auto;
+}
+
+.img_box{
+	display: flex;
+	width: 10%;
+	flex-direction: column;
+	margin: 30px;
+	margin-left: 10%;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+.text_box{
+	width: 100%;
+	height: 100%;
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+.text{
+	width: 80%;
+	height: 80px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+	margin-bottom: 15px;
+	overflow:auto;
+}
+
+.text > p{
+	margin: 10px;
+}
+

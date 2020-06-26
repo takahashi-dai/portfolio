@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@keyframes push{
+    100%{
+        width: 100%;
+    }
+}
+
+
+html{
+	height:100%;
+}
+
+body{
+	margin:0px;
+	height:100%;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	background-color:black;
+	
+	display:flex;
+	flex-direction:row;
+	
+}
+
+.left_sub{
+	width:20%;
+	height:100%;
+	background-color:black;
+}
+
+.right_sub{
+	width:80%;
+	height:100%;
+	background-color: white;
+}
+
+.right_main{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	margin: 0;
+	overflow: hidden;
+}
+
+.menu_container{
+	width:100%;
+	height:100%;
+}
+
+
+
+
+.menu_container >div{
+
+
+	width:100%;
+	height:10%;
+	transition:opacity 1s 0s,1s 0s;
+}
+
+.menu_container>div:hover{
+	color:white;
+	opacity: 50%;
+}
+
+.menu{
+	background-color:orange;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+.menu2{
+	background-color:gray;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.menu2 a{
+	height:100%;
+	width:100%;
+	color:white;
+	text-align:center;
+}
+
+#bg-video{
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: 100%;
+	z-index: -100;
+	overflow: hidden;
+}
+
+.profile{
+	position: absolute;
+	width: 75%;
+	height: 90%;
+	margin: 20px;
+	background-color: white;
+	opacity: 80%;
+	top: 0;
+}
+
+.profile-main{
+	padding: 50px;
+}
